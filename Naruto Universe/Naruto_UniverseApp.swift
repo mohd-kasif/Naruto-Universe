@@ -11,7 +11,7 @@ import SwiftUI
 struct Naruto_UniverseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AllCharacterView()
         }
     }
 }

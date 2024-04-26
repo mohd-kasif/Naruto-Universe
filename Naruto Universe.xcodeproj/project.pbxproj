@@ -12,6 +12,21 @@
 		4BC9F7E12BD4060800DC94B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC9F7E02BD4060800DC94B6 /* Assets.xcassets */; };
 		4BC9F7E52BD4060800DC94B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC9F7E42BD4060800DC94B6 /* Preview Assets.xcassets */; };
 		4BC9F8092BD4124200DC94B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC9F8082BD4124200DC94B6 /* LaunchScreen.storyboard */; };
+		4BC9F80E2BD45DED00DC94B6 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9F80D2BD45DED00DC94B6 /* EndPoints.swift */; };
+		4BC9F8102BD45E6500DC94B6 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9F80F2BD45E6500DC94B6 /* CharacterView.swift */; };
+		4BC9F8122BD45E7800DC94B6 /* CharacterVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9F8112BD45E7800DC94B6 /* CharacterVIewModel.swift */; };
+		4BC9F8142BD45EA700DC94B6 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9F8132BD45EA700DC94B6 /* CharacterModel.swift */; };
+		4BD9AD1B2BD9779000C62C45 /* AllCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD1A2BD9779000C62C45 /* AllCharacterModel.swift */; };
+		4BD9AD1D2BD9779F00C62C45 /* AllCharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD1C2BD9779F00C62C45 /* AllCharacterViewModel.swift */; };
+		4BD9AD1F2BD977BD00C62C45 /* AllCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD1E2BD977BD00C62C45 /* AllCharacterView.swift */; };
+		4BD9AD212BD9793E00C62C45 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD202BD9793E00C62C45 /* Extensions.swift */; };
+		4BD9AD242BD97BE000C62C45 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD232BD97BE000C62C45 /* Header.swift */; };
+		4BD9AD272BD97D2600C62C45 /* njnaruto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BD9AD262BD97D2600C62C45 /* njnaruto.ttf */; };
+		4BD9AD292BD97D9D00C62C45 /* NjNarutoText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD282BD97D9D00C62C45 /* NjNarutoText.swift */; };
+		4BD9AD2B2BD9844700C62C45 /* ReggaeOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BD9AD2A2BD9844700C62C45 /* ReggaeOne-Regular.ttf */; };
+		4BD9AD2D2BD9AAEB00C62C45 /* SIngleCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD2C2BD9AAEB00C62C45 /* SIngleCharacterView.swift */; };
+		4BD9AD2F2BD9B05300C62C45 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD2E2BD9B05300C62C45 /* NetworkManager.swift */; };
+		4BD9AD312BDC39A300C62C45 /* CacheImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD302BDC39A300C62C45 /* CacheImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +36,23 @@
 		4BC9F7E02BD4060800DC94B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BC9F7E22BD4060800DC94B6 /* Naruto_Universe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Naruto_Universe.entitlements; sourceTree = "<group>"; };
 		4BC9F7E42BD4060800DC94B6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4BC9F8072BD40D5000DC94B6 /* Naruto-Universe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Naruto-Universe-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4BC9F8072BD40D5000DC94B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		4BC9F8082BD4124200DC94B6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BC9F80D2BD45DED00DC94B6 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		4BC9F80F2BD45E6500DC94B6 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		4BC9F8112BD45E7800DC94B6 /* CharacterVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterVIewModel.swift; sourceTree = "<group>"; };
+		4BC9F8132BD45EA700DC94B6 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		4BD9AD1A2BD9779000C62C45 /* AllCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharacterModel.swift; sourceTree = "<group>"; };
+		4BD9AD1C2BD9779F00C62C45 /* AllCharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharacterViewModel.swift; sourceTree = "<group>"; };
+		4BD9AD1E2BD977BD00C62C45 /* AllCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCharacterView.swift; sourceTree = "<group>"; };
+		4BD9AD202BD9793E00C62C45 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4BD9AD232BD97BE000C62C45 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		4BD9AD262BD97D2600C62C45 /* njnaruto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = njnaruto.ttf; sourceTree = "<group>"; };
+		4BD9AD282BD97D9D00C62C45 /* NjNarutoText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NjNarutoText.swift; sourceTree = "<group>"; };
+		4BD9AD2A2BD9844700C62C45 /* ReggaeOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReggaeOne-Regular.ttf"; sourceTree = "<group>"; };
+		4BD9AD2C2BD9AAEB00C62C45 /* SIngleCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIngleCharacterView.swift; sourceTree = "<group>"; };
+		4BD9AD2E2BD9B05300C62C45 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4BD9AD302BDC39A300C62C45 /* CacheImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +85,9 @@
 		4BC9F7DB2BD4060700DC94B6 /* Naruto Universe */ = {
 			isa = PBXGroup;
 			children = (
-				4BC9F8072BD40D5000DC94B6 /* Naruto-Universe-Info.plist */,
+				4BD9AD252BD97CD600C62C45 /* Fonts */,
+				4BC9F80A2BD419E900DC94B6 /* Module */,
+				4BC9F8072BD40D5000DC94B6 /* Info.plist */,
 				4BC9F7DC2BD4060700DC94B6 /* Naruto_UniverseApp.swift */,
 				4BC9F7DE2BD4060700DC94B6 /* ContentView.swift */,
 				4BC9F7E02BD4060800DC94B6 /* Assets.xcassets */,
@@ -72,6 +104,75 @@
 				4BC9F7E42BD4060800DC94B6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4BC9F80A2BD419E900DC94B6 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				4BD9AD192BD9777C00C62C45 /* All Character */,
+				4BC9F8152BD461C800DC94B6 /* Network Manager */,
+				4BC9F80C2BD45DD800DC94B6 /* Utility */,
+				4BC9F80B2BD419F100DC94B6 /* Character */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		4BC9F80B2BD419F100DC94B6 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				4BC9F80F2BD45E6500DC94B6 /* CharacterView.swift */,
+				4BC9F8112BD45E7800DC94B6 /* CharacterVIewModel.swift */,
+				4BC9F8132BD45EA700DC94B6 /* CharacterModel.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		4BC9F80C2BD45DD800DC94B6 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4BD9AD222BD97BC100C62C45 /* Reusable Component */,
+				4BC9F80D2BD45DED00DC94B6 /* EndPoints.swift */,
+				4BD9AD202BD9793E00C62C45 /* Extensions.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		4BC9F8152BD461C800DC94B6 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4BD9AD2E2BD9B05300C62C45 /* NetworkManager.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		4BD9AD192BD9777C00C62C45 /* All Character */ = {
+			isa = PBXGroup;
+			children = (
+				4BD9AD1A2BD9779000C62C45 /* AllCharacterModel.swift */,
+				4BD9AD1C2BD9779F00C62C45 /* AllCharacterViewModel.swift */,
+				4BD9AD1E2BD977BD00C62C45 /* AllCharacterView.swift */,
+			);
+			path = "All Character";
+			sourceTree = "<group>";
+		};
+		4BD9AD222BD97BC100C62C45 /* Reusable Component */ = {
+			isa = PBXGroup;
+			children = (
+				4BD9AD232BD97BE000C62C45 /* Header.swift */,
+				4BD9AD282BD97D9D00C62C45 /* NjNarutoText.swift */,
+				4BD9AD2C2BD9AAEB00C62C45 /* SIngleCharacterView.swift */,
+				4BD9AD302BDC39A300C62C45 /* CacheImage.swift */,
+			);
+			path = "Reusable Component";
+			sourceTree = "<group>";
+		};
+		4BD9AD252BD97CD600C62C45 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4BD9AD262BD97D2600C62C45 /* njnaruto.ttf */,
+				4BD9AD2A2BD9844700C62C45 /* ReggaeOne-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +233,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD9AD2B2BD9844700C62C45 /* ReggaeOne-Regular.ttf in Resources */,
 				4BC9F8092BD4124200DC94B6 /* LaunchScreen.storyboard in Resources */,
+				4BD9AD272BD97D2600C62C45 /* njnaruto.ttf in Resources */,
 				4BC9F7E52BD4060800DC94B6 /* Preview Assets.xcassets in Resources */,
 				4BC9F7E12BD4060800DC94B6 /* Assets.xcassets in Resources */,
 			);
@@ -145,8 +248,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD9AD312BDC39A300C62C45 /* CacheImage.swift in Sources */,
+				4BD9AD1D2BD9779F00C62C45 /* AllCharacterViewModel.swift in Sources */,
 				4BC9F7DF2BD4060700DC94B6 /* ContentView.swift in Sources */,
+				4BC9F80E2BD45DED00DC94B6 /* EndPoints.swift in Sources */,
+				4BC9F8102BD45E6500DC94B6 /* CharacterView.swift in Sources */,
+				4BD9AD1F2BD977BD00C62C45 /* AllCharacterView.swift in Sources */,
+				4BD9AD242BD97BE000C62C45 /* Header.swift in Sources */,
+				4BD9AD2D2BD9AAEB00C62C45 /* SIngleCharacterView.swift in Sources */,
+				4BD9AD212BD9793E00C62C45 /* Extensions.swift in Sources */,
+				4BC9F8142BD45EA700DC94B6 /* CharacterModel.swift in Sources */,
+				4BD9AD1B2BD9779000C62C45 /* AllCharacterModel.swift in Sources */,
+				4BD9AD2F2BD9B05300C62C45 /* NetworkManager.swift in Sources */,
 				4BC9F7DD2BD4060700DC94B6 /* Naruto_UniverseApp.swift in Sources */,
+				4BC9F8122BD45E7800DC94B6 /* CharacterVIewModel.swift in Sources */,
+				4BD9AD292BD97D9D00C62C45 /* NjNarutoText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +396,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Naruto-Universe-Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -321,7 +437,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Naruto-Universe-Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
