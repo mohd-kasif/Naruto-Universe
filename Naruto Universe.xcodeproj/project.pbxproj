@@ -27,6 +27,9 @@
 		4BD9AD2D2BD9AAEB00C62C45 /* SIngleCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD2C2BD9AAEB00C62C45 /* SIngleCharacterView.swift */; };
 		4BD9AD2F2BD9B05300C62C45 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD2E2BD9B05300C62C45 /* NetworkManager.swift */; };
 		4BD9AD312BDC39A300C62C45 /* CacheImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD302BDC39A300C62C45 /* CacheImage.swift */; };
+		4BD9AD342BDD92A300C62C45 /* NavigationPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD332BDD92A300C62C45 /* NavigationPath.swift */; };
+		4BD9AD362BDD935900C62C45 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD352BDD935900C62C45 /* RootView.swift */; };
+		4BD9AD382BDD948200C62C45 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD372BDD948200C62C45 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		4BD9AD2C2BD9AAEB00C62C45 /* SIngleCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIngleCharacterView.swift; sourceTree = "<group>"; };
 		4BD9AD2E2BD9B05300C62C45 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		4BD9AD302BDC39A300C62C45 /* CacheImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheImage.swift; sourceTree = "<group>"; };
+		4BD9AD332BDD92A300C62C45 /* NavigationPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPath.swift; sourceTree = "<group>"; };
+		4BD9AD352BDD935900C62C45 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		4BD9AD372BDD948200C62C45 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 		4BC9F80A2BD419E900DC94B6 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				4BD9AD322BDD925400C62C45 /* Navigation Stack */,
 				4BD9AD192BD9777C00C62C45 /* All Character */,
 				4BC9F8152BD461C800DC94B6 /* Network Manager */,
 				4BC9F80C2BD45DD800DC94B6 /* Utility */,
@@ -173,6 +180,16 @@
 				4BD9AD2A2BD9844700C62C45 /* ReggaeOne-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4BD9AD322BDD925400C62C45 /* Navigation Stack */ = {
+			isa = PBXGroup;
+			children = (
+				4BD9AD332BDD92A300C62C45 /* NavigationPath.swift */,
+				4BD9AD352BDD935900C62C45 /* RootView.swift */,
+				4BD9AD372BDD948200C62C45 /* Router.swift */,
+			);
+			path = "Navigation Stack";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +268,8 @@
 				4BD9AD312BDC39A300C62C45 /* CacheImage.swift in Sources */,
 				4BD9AD1D2BD9779F00C62C45 /* AllCharacterViewModel.swift in Sources */,
 				4BC9F7DF2BD4060700DC94B6 /* ContentView.swift in Sources */,
+				4BD9AD362BDD935900C62C45 /* RootView.swift in Sources */,
+				4BD9AD382BDD948200C62C45 /* Router.swift in Sources */,
 				4BC9F80E2BD45DED00DC94B6 /* EndPoints.swift in Sources */,
 				4BC9F8102BD45E6500DC94B6 /* CharacterView.swift in Sources */,
 				4BD9AD1F2BD977BD00C62C45 /* AllCharacterView.swift in Sources */,
@@ -260,6 +279,7 @@
 				4BC9F8142BD45EA700DC94B6 /* CharacterModel.swift in Sources */,
 				4BD9AD1B2BD9779000C62C45 /* AllCharacterModel.swift in Sources */,
 				4BD9AD2F2BD9B05300C62C45 /* NetworkManager.swift in Sources */,
+				4BD9AD342BDD92A300C62C45 /* NavigationPath.swift in Sources */,
 				4BC9F7DD2BD4060700DC94B6 /* Naruto_UniverseApp.swift in Sources */,
 				4BC9F8122BD45E7800DC94B6 /* CharacterVIewModel.swift in Sources */,
 				4BD9AD292BD97D9D00C62C45 /* NjNarutoText.swift in Sources */,

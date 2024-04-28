@@ -10,6 +10,11 @@ import SwiftUI
 struct AllCharacterView: View {
     
     @ObservedObject var vm=AllCharacterViewModel()
+    
+    init() {
+        self.vm = vm
+        vm.getAllCharacter(page: vm.page)
+    }
     var body: some View {
         
         ZStack{
@@ -22,12 +27,13 @@ struct AllCharacterView: View {
                             ForEach(allCharacter, id:\.id){item in
                                 SingleCharacterView(name: item.name, url: item.images.isEmpty ? "" : item.images[0])
                                     .cardStyle()
+                                    .onTapGesture {
+//                                        print(item, "item info")
+                                        Router.shared.pushNextScreen(view: CharacterView(charInfo: item), viewName: String(describing: CharacterView.self))
+                                    }
                                     .onAppear{
                                         if item==vm.allCharacter?.characters.last{
-                                            var newPage=vm.page
-                                            newPage += 1
-                                            vm.page=newPage
-                                            vm.getAllCharacter(page: vm.page)
+                                            appendCharacter()
                                         }
                                     }
                             }
@@ -36,18 +42,21 @@ struct AllCharacterView: View {
                         EmptyView()
                     }
                
-//                    SingleCharacterView(name: "Obito Uchiha", url: "https://static.wikia.nocookie.net/naruto/images/4/4a/Obito_Uchiha.png")
-//                        .cardStyle()
                 }
             }
+            .navBar(title: "Characters",backButton: {
+            })
             .padding([.trailing,.leading],20)
-            .onAppear{
-                vm.getAllCharacter(page: 1)
-//                vm.getCharacterInfo()
-//                vm.getCharacter(name: "otachi")
-            }
+            
         }
         
+    }
+}
+
+extension AllCharacterView{
+    func appendCharacter(){
+        vm.page += 1
+        vm.getAllCharacter(page: vm.page)
     }
 }
 

@@ -32,10 +32,16 @@ struct SingleCharacterView: View {
     //                        .background(.white)
                     default:
     //                    let _ = Logger.info(description: "erorr during caching")
+                        let _ = print("error during caching")
                         Color.clear
                             .frame(maxWidth: 40, maxHeight: 40)
                     }
                 }
+            } else {
+                Image("not_found")
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(Circle())
             }
 
             NjNarutoText.shared.getH6Text(inputString: name, withSize: 16,color: Color.color("#FFFFFFF"))

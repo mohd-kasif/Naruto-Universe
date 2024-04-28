@@ -36,3 +36,66 @@ extension View{
         modifier(CharacterViewModifier())
     }
 }
+
+
+extension View{
+    public func navBar(title:String,backBtnAllow:Bool?=nil, backButton:@escaping ()->Void)-> some View{
+        self
+            .navigationTitle(title)
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarBackButtonHidden(true)
+//            .navigationBarItems(leading: BackButtonView)
+            .toolbarRole(.navigationStack)
+            .toolbar(content: {
+                ToolbarItem(placement: .navigationBarLeading, content: {
+                    if let backBtnAllow=backBtnAllow{
+                        if backBtnAllow{
+                            BackButtonView(onTap: backButton)
+                        }
+                    }
+                })
+                ToolbarItem(placement: .navigationBarTrailing, content: {
+                    Image(systemName: "magnifyingglass")
+                        .resizable()
+                        .renderingMode(.original)
+                })
+                
+            })
+            .toolbarBackground(.orange, for: .navigationBar)
+    }
+}
+
+struct BackButtonView:View{
+    var onTap:(()->Void)
+    init(onTap: @escaping () -> Void) {
+        self.onTap = onTap
+    }
+    var body: some View {
+        Button(action:{
+            onTap()
+        }){
+           Image(systemName: "arrow.backward")
+                .resizable()
+                .renderingMode(.original)
+                .foregroundColor(.black)
+        }
+    }
+}
+
+struct NavBarContent<Content>:View where Content:View{
+    
+    var leftContent:()-> Content?
+    var rightContent:()-> Content?
+    var onTap:(()->Void)?
+    
+    init(@ViewBuilder leftContent: @escaping () -> Content?={nil},@ViewBuilder rightContent: @escaping () -> Content?={nil}, onTap:(()->Void)?=nil) {
+        self.leftContent = leftContent
+        self.rightContent = rightContent
+        self.onTap=onTap
+    }
+    
+    var body: some View{
+        leftContent()
+        rightContent()
+    }
+}

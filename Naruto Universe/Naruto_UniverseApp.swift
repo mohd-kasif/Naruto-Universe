@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct Naruto_UniverseApp: App {
+    init(){
+//        var viewCtrl=UIHostingController(rootView: MyRootView())
+//        print("inside rootview")
+    }
     var body: some Scene {
         WindowGroup {
-            AllCharacterView()
+//            AllCharacterView()
+            MyRootView()
         }
     }
 }
+
