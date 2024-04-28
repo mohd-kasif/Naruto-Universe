@@ -73,3 +73,11 @@ struct CharacterViewModifier:ViewModifier{
             .padding()
     }
 }
+
+struct SingleCharModifier:ViewModifier{
+    func body(content: Content) -> some View {
+        content
+            .background(Color.color("#59180B"))
+        
+    }
+}
