@@ -30,6 +30,7 @@
 		4BD9AD342BDD92A300C62C45 /* NavigationPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD332BDD92A300C62C45 /* NavigationPath.swift */; };
 		4BD9AD362BDD935900C62C45 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD352BDD935900C62C45 /* RootView.swift */; };
 		4BD9AD382BDD948200C62C45 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD372BDD948200C62C45 /* Router.swift */; };
+		4BD9AD3A2BDF093300C62C45 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9AD392BDF093300C62C45 /* VideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		4BD9AD332BDD92A300C62C45 /* NavigationPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPath.swift; sourceTree = "<group>"; };
 		4BD9AD352BDD935900C62C45 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		4BD9AD372BDD948200C62C45 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4BD9AD392BDF093300C62C45 /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				4BD9AD1A2BD9779000C62C45 /* AllCharacterModel.swift */,
 				4BD9AD1C2BD9779F00C62C45 /* AllCharacterViewModel.swift */,
 				4BD9AD1E2BD977BD00C62C45 /* AllCharacterView.swift */,
+				4BD9AD392BDF093300C62C45 /* VideoPlayer.swift */,
 			);
 			path = "All Character";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD9AD3A2BDF093300C62C45 /* VideoPlayer.swift in Sources */,
 				4BD9AD312BDC39A300C62C45 /* CacheImage.swift in Sources */,
 				4BD9AD1D2BD9779F00C62C45 /* AllCharacterViewModel.swift in Sources */,
 				4BC9F7DF2BD4060700DC94B6 /* ContentView.swift in Sources */,

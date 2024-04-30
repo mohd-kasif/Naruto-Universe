@@ -10,7 +10,8 @@ import SwiftUI
 
 final class NjNarutoText{
     static let shared=NjNarutoText()
-    let fontFamily="Ninja-Naruto"
+//    let fontFamily="Ninja-Naruto"
+    let fontFamily="ReggaeOne-Regular"
     private init(){}
     func getH3Text(inputString:String, withSize:Double, color:Color=Color.color("#000000"))->Text{
         return Text(inputString)

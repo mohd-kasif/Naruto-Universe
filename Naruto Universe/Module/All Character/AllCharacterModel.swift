@@ -46,15 +46,15 @@ enum AppearsIn: String, Codable {
 
 // MARK: - Family
 struct CharFamily: Hashable,Codable {
-    let father, mother, son, daughter: String?
-    let wife, adoptiveSon, godfather, brother: String?
-    let cloneSon, familyGrandmother, sister, nephew: String?
-    let uncle, adoptiveMother, adoptiveSons, adoptiveBrother: String?
-    let clone, godson, greatGrandfather, grandfather: String?
-    let grandmother, cousin, geneticTemplateParent, cloneBrother: String?
-    let pet, grandson, granddaughter, granduncle: String?
-    let aunt, firstCousinOnceRemoved, host, niece: String?
-    let lover, creator, geneticTemplate: String?
+    var father, mother, son, daughter: String?
+    var wife, adoptiveSon, godfather, brother: String?
+    var cloneSon, familyGrandmother, sister, nephew: String?
+    var uncle, adoptiveMother, adoptiveSons, adoptiveBrother: String?
+    var clone, godson, greatGrandfather, grandfather: String?
+    var grandmother, cousin, geneticTemplateParent, cloneBrother: String?
+    var pet, grandson, granddaughter, granduncle: String?
+    var aunt, firstCousinOnceRemoved, host, niece: String?
+    var lover, creator, geneticTemplate: String?
 
     enum CodingKeys: String, CodingKey {
         case father, mother, son, daughter, wife
@@ -76,6 +76,56 @@ struct CharFamily: Hashable,Codable {
         case firstCousinOnceRemoved = "first cousin once removed"
         case host, niece, lover, creator
         case geneticTemplate = "genetic template"
+    }
+    
+    func filteValues()->CharFamily{
+        var filteredFamily=self
+        let mirror=Mirror(reflecting: self)
+        for child in mirror.children{
+            if let propertyName=child.label, let propertyValue=child.value as? String{
+                if propertyValue.isEmpty{
+                    switch propertyName{
+                    case "father": filteredFamily.father = nil
+                    case "mother": filteredFamily.mother = nil
+                    case "son": filteredFamily.son = nil
+                    case "daughter": filteredFamily.daughter = nil
+                    case "wife": filteredFamily.wife = nil
+                    case "adoptiveSon": filteredFamily.adoptiveSon = nil
+                    case "godfather": filteredFamily.godfather = nil
+                    case "brother": filteredFamily.brother = nil
+                    case "cloneSon": filteredFamily.cloneSon = nil
+                    case "familyGrandmother": filteredFamily.familyGrandmother = nil
+                    case "sister": filteredFamily.sister = nil
+                    case "nephew": filteredFamily.nephew = nil
+                    case "uncle": filteredFamily.uncle = nil
+                    case "adoptiveMother": filteredFamily.adoptiveMother = nil
+                    case "adoptiveSons": filteredFamily.adoptiveSons = nil
+                    case "adoptiveBrother": filteredFamily.adoptiveBrother = nil
+                    case "clone": filteredFamily.clone = nil
+                    case "godson": filteredFamily.godson = nil
+                    case "greatGrandfather": filteredFamily.greatGrandfather = nil
+                    case "grandfather": filteredFamily.grandfather = nil
+                    case "grandmother": filteredFamily.grandmother = nil
+                    case "cousin": filteredFamily.cousin = nil
+                    case "geneticTemplateParent": filteredFamily.geneticTemplateParent = nil
+                    case "cloneBrother": filteredFamily.cloneBrother = nil
+                    case "pet": filteredFamily.pet = nil
+                    case "grandson": filteredFamily.grandson = nil
+                    case "granddaughter": filteredFamily.granddaughter = nil
+                    case "granduncle": filteredFamily.granduncle = nil
+                    case "aunt": filteredFamily.aunt = nil
+                    case "firstCousinOnceRemoved": filteredFamily.firstCousinOnceRemoved = nil
+                    case "host": filteredFamily.host = nil
+                    case "niece": filteredFamily.niece = nil
+                    case "lover": filteredFamily.lover = nil
+                    case "creator": filteredFamily.creator = nil
+                    case "geneticTemplate": filteredFamily.geneticTemplate = nil
+                    default: break
+                    }
+                }
+            }
+        }
+        return filteredFamily
     }
 }
 

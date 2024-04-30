@@ -29,6 +29,7 @@ struct AllCharacterView: View {
                                     .cardStyle()
                                     .onTapGesture {
 //                                        print(item, "item info")
+//                                        Router.shared.pushNextScreen(view: VideoPlayerView(), viewName: String(describing: VideoPlayerView.self))
                                         Router.shared.pushNextScreen(view: CharacterView(charInfo: item), viewName: String(describing: CharacterView.self))
                                     }
                                     .onAppear{
