@@ -58,7 +58,10 @@ struct CharacterView: View {
                 }
                 .padding(.leading,5)
                     SingleStack(charKey: "Dob", charVaue: charInfo.personal.birthdate ?? "")
-                    SingleStack(charKey: "Nature Type", charVaue: charInfo.natureType?.joined(separator: ",") ?? "")
+                    NjNarutoText.shared.getHeadlineText(inputString: "Nature Type", withSize: 18)
+                        .frame(alignment: .center)
+                    NjNarutoText.shared.getH3Text(inputString: charInfo.natureType?.joined(separator: ",") ?? "", withSize: 14)
+                        .padding([.leading],10)
                 HStack{
                     NjNarutoText.shared.getHeadlineText(inputString: "Occupation: ", withSize: 16)
                     if let occupation=charInfo.personal.occupation{
@@ -109,6 +112,72 @@ struct CharacterView: View {
                         .frame(alignment: .center)
                     NjNarutoText.shared.getH3Text(inputString: charInfo.jutsu.joined(separator: ", "), withSize: 14)
                         .padding([.leading],10)
+                    NjNarutoText.shared.getHeadlineText(inputString: "Kekkei-Genkai", withSize: 18)
+                        .frame(alignment: .center)
+                    if let kekkei=charInfo.personal.kekkeiGenkai{
+                        if case .string(let string) = kekkei {
+                            NjNarutoText.shared.getH3Text(inputString: string, withSize: 14)
+                                .padding([.leading],10)
+                        } else if case .stringArray(let array) = kekkei {
+                            NjNarutoText.shared.getH3Text(inputString: array.joined(separator: ", "), withSize: 14)
+                                .padding([.leading],10)
+                        }
+                    }
+                    if let kekkeiMora=charInfo.personal.kekkeiMōra{
+                        NjNarutoText.shared.getHeadlineText(inputString: "Kekkei-Mōra", withSize: 18)
+                            .frame(alignment: .center)
+                        if case .string(let string) = kekkeiMora {
+                            NjNarutoText.shared.getH3Text(inputString: string, withSize: 14)
+                                .padding([.leading],5)
+                        } else if case .stringArray(let array) = kekkeiMora {
+                            NjNarutoText.shared.getH3Text(inputString: array.joined(separator: ", "), withSize: 14)
+                                .padding([.leading],5)
+                        }
+                    }
+                    NjNarutoText.shared.getHeadlineText(inputString: "Affiliation", withSize: 18)
+                        .frame(alignment: .center)
+                    if let affiliation=charInfo.personal.affiliation{
+                        if case .string(let string) = affiliation {
+                            NjNarutoText.shared.getH3Text(inputString: string, withSize: 14)
+                                .padding([.leading],10)
+                        } else if case .stringArray(let array) = affiliation {
+                            NjNarutoText.shared.getH3Text(inputString: array.joined(separator: ", "), withSize: 14)
+                                .padding([.leading],10)
+                        }
+                    }
+                    NjNarutoText.shared.getHeadlineText(inputString: "Team", withSize: 18)
+                        .frame(alignment: .center)
+                    if let team=charInfo.personal.team{
+                        if case .string(let string) = team {
+                            NjNarutoText.shared.getH3Text(inputString: string, withSize: 14)
+                                .padding([.leading],5)
+                        } else if case .stringArray(let array) = team {
+                            NjNarutoText.shared.getH3Text(inputString: array.joined(separator: ", "), withSize: 14)
+                                .padding([.leading],10)
+                        }
+                    }
+                    if let titles=charInfo.personal.titles{
+                        NjNarutoText.shared.getHeadlineText(inputString: "Titles", withSize: 18)
+                            .frame(alignment: .center)
+                        NjNarutoText.shared.getH3Text(inputString: titles.joined(separator: ", "), withSize: 14)
+                            .padding([.leading],5)
+                    }
+                    if let partner=charInfo.personal.partner{
+                        NjNarutoText.shared.getHeadlineText(inputString: "Partner", withSize: 18)
+                            .frame(alignment: .center)
+                        if case .string(let string) = partner {
+                            NjNarutoText.shared.getH3Text(inputString: string, withSize: 14)
+                                .padding([.leading],5)
+                        } else if case .stringArray(let array) = partner {
+                            NjNarutoText.shared.getH3Text(inputString: array.joined(separator: ", "), withSize: 14)
+                                .padding([.leading],5)
+                        }
+                    }
+                    if let species=charInfo.personal.species{
+                        SingleStack(charKey: "Species", charVaue: species)
+                    }
+                       
+//                    SingleStack(charKey: "Kekkei-Genkai", charVaue: charInfo.personal.kekkeiGenkai)
                     
                 Spacer()
             }
