@@ -16,22 +16,25 @@ struct SingleCharacterView: View {
         self.url = url
     }
     var body: some View {
+        ZStack{
         VStack(alignment:.leading){
             if let url=URL(string: url){
                 CacheImage(url: url){phase in
                     switch phase{
                     case .empty:
                         ProgressView()
-                            .frame(width: 160,height: 200)
+                            .frame(width: 200,height: 200)
                     case .success(let image):
                         image.resizable()
-                            .scaledToFit()
-                            .clipShape(Circle())
-    //                        .aspectRatio(contentMode: .fit)
-    //                        .frame(maxWidth: 40, maxHeight: 40)
-    //                        .background(.white)
+                            .frame(width: (UIScreen.width/2)+30,height: UIScreen.height/3)
+                            .aspectRatio(contentMode: .fit)
+                            .cornerRadius(8)
+                        //                            .clipShape(Circle())
+                        //                        .aspectRatio(contentMode: .fit)
+                        //                        .frame(maxWidth: 40, maxHeight: 40)
+                        //                        .background(.white)
                     default:
-    //                    let _ = Logger.info(description: "erorr during caching")
+                        //                    let _ = Logger.info(description: "erorr during caching")
                         let _ = print("error during caching")
                         Color.clear
                             .frame(maxWidth: 40, maxHeight: 40)
@@ -43,13 +46,28 @@ struct SingleCharacterView: View {
                     .scaledToFit()
                     .clipShape(Circle())
             }
-
-            NjNarutoText.shared.getH6Text(inputString: name, withSize: 16,color: Color.color("#FFFFFFF"))
+            
+//            NjNarutoText.shared.getH6Text(inputString: name, withSize: 16,color: Color.color("#F"))
         }
         .padding()
+            VStack(alignment:.leading){
+                NjNarutoText.shared.getH6Text(inputString: name, withSize: 16,color: Color.color("#FFFFFF"))
+                Spacer()
+            }
+            .frame(width: (UIScreen.width)/2+30,height: (UIScreen.height)/7)
+            .background(.black)
+            .cornerRadius(8, corner: [.bottomLeft,.bottomRight])
+            .opacity(0.5)
+            .offset(y:80)
+//            .offset(y:UIScreen.height/11)
+  
+         
+            
+    }
     }
 }
 
-//#Preview {
-//    SIngleCharacterView()
-//}
+#Preview {
+    SingleCharacterView(name: "Itachi Uchicha", url: "https://static.wikia.nocookie.net/naruto/images/b/bb/Itachi.png")
+        .cornerRadius(8)
+}

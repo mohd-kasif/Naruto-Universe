@@ -11,6 +11,7 @@ enum AllUrl{
     static let baseUrl="https://dattebayo-api.onrender.com"
     static let allCharacter="https://dattebayo-api.onrender.com/characters"
     static let page="https://dattebayo-api.onrender.com/characters?page="
+    static let serachChar="https://dattebayo-api.onrender.com/characters/?name="
     static let itachi="https://dattebayo-api.onrender.com/characters/?name=itachi"
 }
 enum Api{

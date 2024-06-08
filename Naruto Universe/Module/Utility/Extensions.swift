@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import UIKit
 extension Color{
     init(hex:Int, opacity:Double=1.0) {
         let red = Double((hex & 0xff0000) >> 16) / 255.0
@@ -39,11 +40,14 @@ extension View{
 
 
 extension View{
-    public func navBar(title:String,backBtnAllow:Bool?=nil, backButton:@escaping ()->Void)-> some View{
+    public func navBar(title:String,backBtnAllow:Bool?=nil,searchBtn:Bool=false, backButton:@escaping ()->Void,searchButton: (()->Void)?=nil)-> some View{
         self
             .navigationTitle(title)
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden(true)
+            .alignmentGuide(HorizontalAlignment.leading, computeValue: { d in
+                return d[HorizontalAlignment.leading]+d.width/3.0-(d[explicit: VerticalAlignment.top] ?? 0)
+            })
 //            .navigationBarItems(leading: BackButtonView)
             .toolbarRole(.navigationStack)
             .toolbar(content: {
@@ -55,9 +59,17 @@ extension View{
                     }
                 })
                 ToolbarItem(placement: .navigationBarTrailing, content: {
-                    Image(systemName: "magnifyingglass")
-                        .resizable()
-                        .renderingMode(.original)
+                    if searchBtn{
+                        Image(systemName: "magnifyingglass")
+                            .resizable()
+                            .renderingMode(.original)
+                            .onTapGesture {
+                                if let closure=searchButton{
+                                    closure()
+                                }
+                            }
+                    }
+                   
                 })
                 
             })
@@ -98,4 +110,32 @@ struct NavBarContent<Content>:View where Content:View{
         leftContent()
         rightContent()
     }
+}
+
+
+extension UIScreen{
+    static let width=UIScreen.main.bounds.width
+    static let height=UIScreen.main.bounds.height
+    static let size=UIScreen.main.bounds.size
+}
+
+
+extension View{
+    func cornerRadius(_ radius:CGFloat, corner:UIRectCorner)->some View{
+        clipShape(RoundedCorner(radius: radius, corner: corner))
+    }
+}
+
+struct RoundedCorner:Shape{
+    var radius:CGFloat = .infinity
+    var corner:UIRectCorner = .allCorners
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corner, cornerRadii: CGSize(width: radius, height: radius))
+        return Path(path.cgPath)
+    }
+}
+
+
+extension HorizontalAlignment{
+    
 }

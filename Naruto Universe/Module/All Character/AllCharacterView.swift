@@ -18,34 +18,37 @@ struct AllCharacterView: View {
     var body: some View {
         
         ZStack{
-            Color.color("#8a1e22")
+            Color.color("#FFFFFF")
                 .ignoresSafeArea()
             VStack{
                 ScrollView{
                     if let allCharacter = vm.allCharacter?.characters{
-                        LazyVStack{
+                        LazyVStack(spacing: 5){
                             ForEach(allCharacter, id:\.id){item in
                                 SingleCharacterView(name: item.name, url: item.images.isEmpty ? "" : item.images[0])
                                     .cardStyle()
                                     .onTapGesture {
-//                                        print(item, "item info")
-//                                        Router.shared.pushNextScreen(view: VideoPlayerView(), viewName: String(describing: VideoPlayerView.self))
+                                        //                                        print(item, "item info")
+                                        //                                        Router.shared.pushNextScreen(view: VideoPlayerView(), viewName: String(describing: VideoPlayerView.self))
                                         Router.shared.pushNextScreen(view: CharacterView(charInfo: item), viewName: String(describing: CharacterView.self))
                                     }
                                     .onAppear{
-                                        if item==vm.allCharacter?.characters.last{
-                                            appendCharacter()
-                                        }
+//                                        if item==vm.allCharacter?.characters.last{
+//                                            appendCharacter()
+//                                        }
                                     }
                             }
                         }
                     } else {
                         EmptyView()
                     }
-               
-                }
+                    
+                
             }
-            .navBar(title: "Characters",backButton: {
+            }
+            .navBar(title: "Characters",searchBtn: true, backButton: {
+            }, searchButton: {
+                Router.shared.pushNextScreen(view: SearchCharView(), viewName: String(describing: SearchCharView.self))
             })
             .padding([.trailing,.leading],20)
             
@@ -68,17 +71,17 @@ extension AllCharacterView{
 struct CharacterViewModifier:ViewModifier{
     func body(content: Content) -> some View {
         content
-            .background(Color.color("#59180B"))
+            .background(Color.color("#FFFFFF"))
             .cornerRadius(8)
             .shadow(radius: 8)
             .padding()
     }
 }
 
-struct SingleCharModifier:ViewModifier{
-    func body(content: Content) -> some View {
-        content
-            .background(Color.color("#59180B"))
-        
-    }
-}
+//struct SingleCharModifier:ViewModifier{
+//    func body(content: Content) -> some View {
+//        content
+//            .background(Color.color("#59180B"))
+//        
+//    }
+//}

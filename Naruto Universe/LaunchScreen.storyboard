@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,30 +13,16 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleAspectFill" image="LaunchScreen" highlightedImage="LaunchScreen" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gj6-Wt-C0J">
-                                <rect key="frame" x="20" y="48" width="394" height="814"/>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="regular"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="LaunchScreen" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7au-DN-mcw">
+                                <rect key="frame" x="-10" y="-22" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DyG-gt-Y7q"/>
                         <color key="backgroundColor" name="LaunchColor"/>
-                        <constraints>
-                            <constraint firstItem="gj6-Wt-C0J" firstAttribute="top" secondItem="DyG-gt-Y7q" secondAttribute="top" id="0w9-zq-6p5"/>
-                            <constraint firstItem="gj6-Wt-C0J" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="CAA-ST-KKU"/>
-                            <constraint firstItem="gj6-Wt-C0J" firstAttribute="centerX" secondItem="DyG-gt-Y7q" secondAttribute="centerX" id="CZK-8g-GAt"/>
-                            <constraint firstItem="DyG-gt-Y7q" firstAttribute="trailing" secondItem="gj6-Wt-C0J" secondAttribute="trailing" id="ODi-Ci-b0o"/>
-                            <constraint firstItem="gj6-Wt-C0J" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ONW-Re-dkl"/>
-                            <constraint firstItem="gj6-Wt-C0J" firstAttribute="top" secondItem="DyG-gt-Y7q" secondAttribute="top" constant="100" id="U5p-o5-j9u"/>
-                            <constraint firstItem="gj6-Wt-C0J" firstAttribute="top" secondItem="DyG-gt-Y7q" secondAttribute="top" id="UCf-Y8-Pcr"/>
-                            <constraint firstItem="DyG-gt-Y7q" firstAttribute="bottom" secondItem="gj6-Wt-C0J" secondAttribute="bottom" id="bee-Tk-Hon"/>
-                            <constraint firstItem="gj6-Wt-C0J" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="egD-hA-2t6"/>
-                            <constraint firstItem="gj6-Wt-C0J" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="lYm-29-mCM"/>
-                            <constraint firstItem="gj6-Wt-C0J" firstAttribute="top" secondItem="DyG-gt-Y7q" secondAttribute="top" id="u7R-9n-T1N"/>
-                            <constraint firstAttribute="bottom" secondItem="gj6-Wt-C0J" secondAttribute="bottom" id="vTr-wS-KnL"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

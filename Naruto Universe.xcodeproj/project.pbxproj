@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B4C42BE2C1345C200758F48 /* SearchCharView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C42BD2C1345C200758F48 /* SearchCharView.swift */; };
+		4B4C42C02C13506B00758F48 /* SearchCharModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C42BF2C13506B00758F48 /* SearchCharModel.swift */; };
+		4B4C42C22C13532600758F48 /* SearchCharViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C42C12C13532600758F48 /* SearchCharViewModel.swift */; };
 		4BC9F7DD2BD4060700DC94B6 /* Naruto_UniverseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9F7DC2BD4060700DC94B6 /* Naruto_UniverseApp.swift */; };
 		4BC9F7DF2BD4060700DC94B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9F7DE2BD4060700DC94B6 /* ContentView.swift */; };
 		4BC9F7E12BD4060800DC94B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC9F7E02BD4060800DC94B6 /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B4C42BD2C1345C200758F48 /* SearchCharView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCharView.swift; sourceTree = "<group>"; };
+		4B4C42BF2C13506B00758F48 /* SearchCharModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCharModel.swift; sourceTree = "<group>"; };
+		4B4C42C12C13532600758F48 /* SearchCharViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCharViewModel.swift; sourceTree = "<group>"; };
 		4BC9F7D92BD4060700DC94B6 /* Naruto Universe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Naruto Universe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC9F7DC2BD4060700DC94B6 /* Naruto_UniverseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Naruto_UniverseApp.swift; sourceTree = "<group>"; };
 		4BC9F7DE2BD4060700DC94B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +80,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B4C42BC2C1345A900758F48 /* SearchCharacter */ = {
+			isa = PBXGroup;
+			children = (
+				4B4C42BD2C1345C200758F48 /* SearchCharView.swift */,
+				4B4C42BF2C13506B00758F48 /* SearchCharModel.swift */,
+				4B4C42C12C13532600758F48 /* SearchCharViewModel.swift */,
+			);
+			path = SearchCharacter;
+			sourceTree = "<group>";
+		};
 		4BC9F7D02BD4060700DC94B6 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +133,7 @@
 		4BC9F80A2BD419E900DC94B6 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				4B4C42BC2C1345A900758F48 /* SearchCharacter */,
 				4BD9AD322BDD925400C62C45 /* Navigation Stack */,
 				4BD9AD192BD9777C00C62C45 /* All Character */,
 				4BC9F8152BD461C800DC94B6 /* Network Manager */,
@@ -270,10 +287,13 @@
 			files = (
 				4BD9AD3A2BDF093300C62C45 /* VideoPlayer.swift in Sources */,
 				4BD9AD312BDC39A300C62C45 /* CacheImage.swift in Sources */,
+				4B4C42BE2C1345C200758F48 /* SearchCharView.swift in Sources */,
 				4BD9AD1D2BD9779F00C62C45 /* AllCharacterViewModel.swift in Sources */,
 				4BC9F7DF2BD4060700DC94B6 /* ContentView.swift in Sources */,
 				4BD9AD362BDD935900C62C45 /* RootView.swift in Sources */,
+				4B4C42C22C13532600758F48 /* SearchCharViewModel.swift in Sources */,
 				4BD9AD382BDD948200C62C45 /* Router.swift in Sources */,
+				4B4C42C02C13506B00758F48 /* SearchCharModel.swift in Sources */,
 				4BC9F80E2BD45DED00DC94B6 /* EndPoints.swift in Sources */,
 				4BC9F8102BD45E6500DC94B6 /* CharacterView.swift in Sources */,
 				4BD9AD1F2BD977BD00C62C45 /* AllCharacterView.swift in Sources */,

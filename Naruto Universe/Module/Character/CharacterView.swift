@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import Foundation
 struct CharacterView: View {
     var charInfo:Characters
     var nonNilFAmily:CharFamily{
@@ -16,6 +16,11 @@ struct CharacterView: View {
         self.charInfo = charInfo
         print(self.charInfo,"char info")
     }
+    let dateFormatter:DateFormatter={
+        let date=DateFormatter()
+        date.dateFormat="MMM"
+        return date
+    }()
     var body: some View {
         ZStack{
             Color.color("#8a1e22")
