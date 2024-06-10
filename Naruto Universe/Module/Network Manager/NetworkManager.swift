@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 enum APIError:Error{
     case invalidUrl
     case requestFailed(description:String="")
@@ -78,3 +79,31 @@ class NetworkManager{
 }
 
 
+extension NetworkManager{
+    func request(url:String) async throws -> UIImage{
+        guard let url=URL(string: url) else {
+            throw APIError.invalidUrl
+        }
+        var request=URLRequest(url: url)
+        request.httpMethod=HttpMethod.Get.rawValue
+        
+        let (data, response) = try await URLSession.shared.data(for: request)
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else {throw APIError.requestFailed(description: "")}
+        if let image=UIImage(data: data){
+            return image
+        } else {
+            throw APIError.failedSerialization
+        }
+    }
+        
+    func request<T:Codable>(url:String, type:T.Type, httpMethod:HttpMethod = .Get) async throws->T?{
+        guard let url=URL(string: url) else {throw APIError.invalidUrl}
+        var request=URLRequest(url: url)
+        request.httpMethod=httpMethod.rawValue
+        
+        let (data, response) = try await URLSession.shared.data(for: request)
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else {throw APIError.requestFailed(description: "request failed")}
+        let decoder=JSONDecoder()
+        return try decoder.decode(T.self, from: data)
+    }
+}

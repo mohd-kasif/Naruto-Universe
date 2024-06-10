@@ -46,19 +46,17 @@ struct SingleCharacterView: View {
                     .scaledToFit()
                     .clipShape(Circle())
             }
-            
-//            NjNarutoText.shared.getH6Text(inputString: name, withSize: 16,color: Color.color("#F"))
         }
         .padding()
             VStack(alignment:.leading){
                 NjNarutoText.shared.getH6Text(inputString: name, withSize: 16,color: Color.color("#FFFFFF"))
                 Spacer()
             }
-            .frame(width: (UIScreen.width)/2+30,height: (UIScreen.height)/7)
+            .frame(width: (UIScreen.width)/2+30,height: 40)
             .background(.black)
             .cornerRadius(8, corner: [.bottomLeft,.bottomRight])
-            .opacity(0.5)
-            .offset(y:80)
+            .opacity(0.6)
+            .offset(y:124)
 //            .offset(y:UIScreen.height/11)
   
          

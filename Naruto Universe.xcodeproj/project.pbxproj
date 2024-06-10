@@ -10,6 +10,8 @@
 		4B4C42BE2C1345C200758F48 /* SearchCharView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C42BD2C1345C200758F48 /* SearchCharView.swift */; };
 		4B4C42C02C13506B00758F48 /* SearchCharModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C42BF2C13506B00758F48 /* SearchCharModel.swift */; };
 		4B4C42C22C13532600758F48 /* SearchCharViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C42C12C13532600758F48 /* SearchCharViewModel.swift */; };
+		4B4C42C42C17165000758F48 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C42C32C17165000758F48 /* HomeButton.swift */; };
+		4B4C42C72C17358900758F48 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C42C62C17358900758F48 /* HomeScreenView.swift */; };
 		4BC9F7DD2BD4060700DC94B6 /* Naruto_UniverseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9F7DC2BD4060700DC94B6 /* Naruto_UniverseApp.swift */; };
 		4BC9F7DF2BD4060700DC94B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9F7DE2BD4060700DC94B6 /* ContentView.swift */; };
 		4BC9F7E12BD4060800DC94B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC9F7E02BD4060800DC94B6 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 		4B4C42BD2C1345C200758F48 /* SearchCharView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCharView.swift; sourceTree = "<group>"; };
 		4B4C42BF2C13506B00758F48 /* SearchCharModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCharModel.swift; sourceTree = "<group>"; };
 		4B4C42C12C13532600758F48 /* SearchCharViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCharViewModel.swift; sourceTree = "<group>"; };
+		4B4C42C32C17165000758F48 /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
+		4B4C42C62C17358900758F48 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		4BC9F7D92BD4060700DC94B6 /* Naruto Universe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Naruto Universe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC9F7DC2BD4060700DC94B6 /* Naruto_UniverseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Naruto_UniverseApp.swift; sourceTree = "<group>"; };
 		4BC9F7DE2BD4060700DC94B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +94,14 @@
 			path = SearchCharacter;
 			sourceTree = "<group>";
 		};
+		4B4C42C52C17342700758F48 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4B4C42C62C17358900758F48 /* HomeScreenView.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
 		4BC9F7D02BD4060700DC94B6 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +145,7 @@
 		4BC9F80A2BD419E900DC94B6 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				4B4C42C52C17342700758F48 /* HomeScreen */,
 				4B4C42BC2C1345A900758F48 /* SearchCharacter */,
 				4BD9AD322BDD925400C62C45 /* Navigation Stack */,
 				4BD9AD192BD9777C00C62C45 /* All Character */,
@@ -189,6 +202,7 @@
 				4BD9AD282BD97D9D00C62C45 /* NjNarutoText.swift */,
 				4BD9AD2C2BD9AAEB00C62C45 /* SIngleCharacterView.swift */,
 				4BD9AD302BDC39A300C62C45 /* CacheImage.swift */,
+				4B4C42C32C17165000758F48 /* HomeButton.swift */,
 			);
 			path = "Reusable Component";
 			sourceTree = "<group>";
@@ -288,6 +302,7 @@
 				4BD9AD3A2BDF093300C62C45 /* VideoPlayer.swift in Sources */,
 				4BD9AD312BDC39A300C62C45 /* CacheImage.swift in Sources */,
 				4B4C42BE2C1345C200758F48 /* SearchCharView.swift in Sources */,
+				4B4C42C72C17358900758F48 /* HomeScreenView.swift in Sources */,
 				4BD9AD1D2BD9779F00C62C45 /* AllCharacterViewModel.swift in Sources */,
 				4BC9F7DF2BD4060700DC94B6 /* ContentView.swift in Sources */,
 				4BD9AD362BDD935900C62C45 /* RootView.swift in Sources */,
@@ -301,6 +316,7 @@
 				4BD9AD2D2BD9AAEB00C62C45 /* SIngleCharacterView.swift in Sources */,
 				4BD9AD212BD9793E00C62C45 /* Extensions.swift in Sources */,
 				4BC9F8142BD45EA700DC94B6 /* CharacterModel.swift in Sources */,
+				4B4C42C42C17165000758F48 /* HomeButton.swift in Sources */,
 				4BD9AD1B2BD9779000C62C45 /* AllCharacterModel.swift in Sources */,
 				4BD9AD2F2BD9B05300C62C45 /* NetworkManager.swift in Sources */,
 				4BD9AD342BDD92A300C62C45 /* NavigationPath.swift in Sources */,

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 enum LoadingState{
     case isloading
     case fetched
@@ -16,6 +17,8 @@ class SearchCharViewModel:NetworkManager,ObservableObject{
      @Published var serachChar:SearchChar?
      @Published var text:String=""
      @Published var loadingState:LoadingState = .idle
+     @Published var images:[UIImage]=[]
+    @Published var url=["https://picsum.photos/200","https://picsum.photos/200","https://picsum.photos/200"]
     func searchInfo(text:String){
         self.loadingState = .isloading
         let url=AllUrl.serachChar+"\(text)"
@@ -32,5 +35,31 @@ class SearchCharViewModel:NetworkManager,ObservableObject{
                 }
             }
         }
+    }
+    
+    func getImages(url:[String]) async throws {
+        try await withThrowingTaskGroup(of: UIImage.self){group in
+            for i in url{
+                group.addTask {
+                    try await self.request(url: i)
+                }
+            }
+            
+            for try await image in group{
+                DispatchQueue.main.async {
+                    self.images.append(image)
+                }
+            }
+        }
+//        for i in url{
+//            do {
+//                let image=try await request(url: i)
+//                DispatchQueue.main.async {
+//                    self.images.append(image)
+//                }
+//            } catch{
+//                print(error)
+//            }
+//        }
     }
 }

@@ -10,7 +10,6 @@ import SwiftUI
 struct AllCharacterView: View {
     
     @ObservedObject var vm=AllCharacterViewModel()
-    
     init() {
         self.vm = vm
         vm.getAllCharacter(page: vm.page)
@@ -18,24 +17,21 @@ struct AllCharacterView: View {
     var body: some View {
         
         ZStack{
-            Color.color("#FFFFFF")
-                .ignoresSafeArea()
+            Color.color("#FFFAF0").ignoresSafeArea()
             VStack{
                 ScrollView{
                     if let allCharacter = vm.allCharacter?.characters{
-                        LazyVStack(spacing: 5){
+                        LazyVStack(spacing:5){
                             ForEach(allCharacter, id:\.id){item in
                                 SingleCharacterView(name: item.name, url: item.images.isEmpty ? "" : item.images[0])
                                     .cardStyle()
                                     .onTapGesture {
-                                        //                                        print(item, "item info")
-                                        //                                        Router.shared.pushNextScreen(view: VideoPlayerView(), viewName: String(describing: VideoPlayerView.self))
                                         Router.shared.pushNextScreen(view: CharacterView(charInfo: item), viewName: String(describing: CharacterView.self))
                                     }
                                     .onAppear{
-//                                        if item==vm.allCharacter?.characters.last{
-//                                            appendCharacter()
-//                                        }
+                                        if item==vm.allCharacter?.characters.last{
+                                            appendCharacter()
+                                        }
                                     }
                             }
                         }
@@ -46,7 +42,8 @@ struct AllCharacterView: View {
                 
             }
             }
-            .navBar(title: "Characters",searchBtn: true, backButton: {
+            .navBar(title: "Characters",backBtnAllow: true, searchBtn: true, backButton: {
+                Router.shared.goBack()
             }, searchButton: {
                 Router.shared.pushNextScreen(view: SearchCharView(), viewName: String(describing: SearchCharView.self))
             })

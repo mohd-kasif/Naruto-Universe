@@ -24,5 +24,5 @@ struct MyNavigationInfo:Hashable{
 class MyNavigationPath:ObservableObject{
     static let shared=MyNavigationPath()
     @Published var pathArray:[MyNavigationInfo]=[]
-    @Published var rootView=AnyView(AllCharacterView())
+    @Published var rootView=AnyView(HomeScreenView())
 }
