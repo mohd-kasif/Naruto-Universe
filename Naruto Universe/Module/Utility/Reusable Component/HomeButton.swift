@@ -16,7 +16,6 @@ struct HomeButton: View {
         self.title = title
         self.onTap = onTap
     }
-    let coloumn=[GridItem(.flexible()),GridItem(.flexible())]
     var body: some View {
                 Button{
                     onTap?()
@@ -24,7 +23,7 @@ struct HomeButton: View {
                     Image(image)
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 180,height:100)
+                        .frame(width: (UIScreen.screenWidth/2)-15,height:140)
                         .clipShape(Rectangle())
                         .cornerRadius(8)
                         .overlay(
@@ -32,7 +31,7 @@ struct HomeButton: View {
                                 VStack{
                                     
                                 }
-                                .frame(width: 180,height: 30)
+                                .frame(width: (UIScreen.screenWidth/2)-15,height: 30)
                                 .background(.black)
                                 .opacity(0.5)
                                 .blur(radius: 3)
@@ -48,9 +47,6 @@ struct HomeButton: View {
                         )
                 }
                 .buttonStyle(GrowingButton())
-        
-        
-        
     }
 }
 

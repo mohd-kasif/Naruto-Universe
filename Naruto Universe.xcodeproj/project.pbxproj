@@ -12,6 +12,21 @@
 		4B4C42C22C13532600758F48 /* SearchCharViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C42C12C13532600758F48 /* SearchCharViewModel.swift */; };
 		4B4C42C42C17165000758F48 /* HomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C42C32C17165000758F48 /* HomeButton.swift */; };
 		4B4C42C72C17358900758F48 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C42C62C17358900758F48 /* HomeScreenView.swift */; };
+		4B52F3532C1828A4004B7345 /* ClanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52F3522C1828A4004B7345 /* ClanView.swift */; };
+		4B52F3572C1828C3004B7345 /* ClanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52F3562C1828C3004B7345 /* ClanModel.swift */; };
+		4B52F3592C1828D2004B7345 /* ClanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52F3582C1828D2004B7345 /* ClanViewModel.swift */; };
+		4B52F35C2C1836AB004B7345 /* VillageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52F35B2C1836AB004B7345 /* VillageView.swift */; };
+		4B52F3602C1836C6004B7345 /* VillageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52F35F2C1836C6004B7345 /* VillageModel.swift */; };
+		4B52F3622C1836D1004B7345 /* VillageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52F3612C1836D1004B7345 /* VillageViewModel.swift */; };
+		4B52F3652C1839A4004B7345 /* KekkeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52F3642C1839A4004B7345 /* KekkeView.swift */; };
+		4B52F3672C1839AE004B7345 /* KekkeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52F3662C1839AE004B7345 /* KekkeModel.swift */; };
+		4B52F3692C1839B7004B7345 /* KekkeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52F3682C1839B7004B7345 /* KekkeViewModel.swift */; };
+		4B52F36C2C183EEB004B7345 /* TailedBeastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52F36B2C183EEB004B7345 /* TailedBeastView.swift */; };
+		4B52F36E2C183EF8004B7345 /* TailedBeastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52F36D2C183EF8004B7345 /* TailedBeastModel.swift */; };
+		4B52F3702C183F05004B7345 /* TailedBeastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52F36F2C183F05004B7345 /* TailedBeastViewModel.swift */; };
+		4B52F3732C1840B3004B7345 /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52F3722C1840B3004B7345 /* TeamsView.swift */; };
+		4B52F3752C1840BE004B7345 /* TeamsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52F3742C1840BE004B7345 /* TeamsModel.swift */; };
+		4B52F3772C1840C9004B7345 /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B52F3762C1840C9004B7345 /* TeamsViewModel.swift */; };
 		4BC9F7DD2BD4060700DC94B6 /* Naruto_UniverseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9F7DC2BD4060700DC94B6 /* Naruto_UniverseApp.swift */; };
 		4BC9F7DF2BD4060700DC94B6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC9F7DE2BD4060700DC94B6 /* ContentView.swift */; };
 		4BC9F7E12BD4060800DC94B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BC9F7E02BD4060800DC94B6 /* Assets.xcassets */; };
@@ -44,6 +59,21 @@
 		4B4C42C12C13532600758F48 /* SearchCharViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCharViewModel.swift; sourceTree = "<group>"; };
 		4B4C42C32C17165000758F48 /* HomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButton.swift; sourceTree = "<group>"; };
 		4B4C42C62C17358900758F48 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		4B52F3522C1828A4004B7345 /* ClanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanView.swift; sourceTree = "<group>"; };
+		4B52F3562C1828C3004B7345 /* ClanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanModel.swift; sourceTree = "<group>"; };
+		4B52F3582C1828D2004B7345 /* ClanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClanViewModel.swift; sourceTree = "<group>"; };
+		4B52F35B2C1836AB004B7345 /* VillageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillageView.swift; sourceTree = "<group>"; };
+		4B52F35F2C1836C6004B7345 /* VillageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillageModel.swift; sourceTree = "<group>"; };
+		4B52F3612C1836D1004B7345 /* VillageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillageViewModel.swift; sourceTree = "<group>"; };
+		4B52F3642C1839A4004B7345 /* KekkeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KekkeView.swift; sourceTree = "<group>"; };
+		4B52F3662C1839AE004B7345 /* KekkeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KekkeModel.swift; sourceTree = "<group>"; };
+		4B52F3682C1839B7004B7345 /* KekkeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KekkeViewModel.swift; sourceTree = "<group>"; };
+		4B52F36B2C183EEB004B7345 /* TailedBeastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailedBeastView.swift; sourceTree = "<group>"; };
+		4B52F36D2C183EF8004B7345 /* TailedBeastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailedBeastModel.swift; sourceTree = "<group>"; };
+		4B52F36F2C183F05004B7345 /* TailedBeastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TailedBeastViewModel.swift; sourceTree = "<group>"; };
+		4B52F3722C1840B3004B7345 /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		4B52F3742C1840BE004B7345 /* TeamsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsModel.swift; sourceTree = "<group>"; };
+		4B52F3762C1840C9004B7345 /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
 		4BC9F7D92BD4060700DC94B6 /* Naruto Universe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Naruto Universe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BC9F7DC2BD4060700DC94B6 /* Naruto_UniverseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Naruto_UniverseApp.swift; sourceTree = "<group>"; };
 		4BC9F7DE2BD4060700DC94B6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +132,56 @@
 			path = HomeScreen;
 			sourceTree = "<group>";
 		};
+		4B52F3512C182896004B7345 /* Clan */ = {
+			isa = PBXGroup;
+			children = (
+				4B52F3522C1828A4004B7345 /* ClanView.swift */,
+				4B52F3562C1828C3004B7345 /* ClanModel.swift */,
+				4B52F3582C1828D2004B7345 /* ClanViewModel.swift */,
+			);
+			path = Clan;
+			sourceTree = "<group>";
+		};
+		4B52F35A2C18369E004B7345 /* Villages */ = {
+			isa = PBXGroup;
+			children = (
+				4B52F35B2C1836AB004B7345 /* VillageView.swift */,
+				4B52F35F2C1836C6004B7345 /* VillageModel.swift */,
+				4B52F3612C1836D1004B7345 /* VillageViewModel.swift */,
+			);
+			path = Villages;
+			sourceTree = "<group>";
+		};
+		4B52F3632C183996004B7345 /* Kekke-Genkai */ = {
+			isa = PBXGroup;
+			children = (
+				4B52F3642C1839A4004B7345 /* KekkeView.swift */,
+				4B52F3662C1839AE004B7345 /* KekkeModel.swift */,
+				4B52F3682C1839B7004B7345 /* KekkeViewModel.swift */,
+			);
+			path = "Kekke-Genkai";
+			sourceTree = "<group>";
+		};
+		4B52F36A2C183ED8004B7345 /* Tailed-Beast */ = {
+			isa = PBXGroup;
+			children = (
+				4B52F36B2C183EEB004B7345 /* TailedBeastView.swift */,
+				4B52F36D2C183EF8004B7345 /* TailedBeastModel.swift */,
+				4B52F36F2C183F05004B7345 /* TailedBeastViewModel.swift */,
+			);
+			path = "Tailed-Beast";
+			sourceTree = "<group>";
+		};
+		4B52F3712C1840A7004B7345 /* Teams */ = {
+			isa = PBXGroup;
+			children = (
+				4B52F3722C1840B3004B7345 /* TeamsView.swift */,
+				4B52F3742C1840BE004B7345 /* TeamsModel.swift */,
+				4B52F3762C1840C9004B7345 /* TeamsViewModel.swift */,
+			);
+			path = Teams;
+			sourceTree = "<group>";
+		};
 		4BC9F7D02BD4060700DC94B6 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +225,11 @@
 		4BC9F80A2BD419E900DC94B6 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				4B52F3712C1840A7004B7345 /* Teams */,
+				4B52F36A2C183ED8004B7345 /* Tailed-Beast */,
+				4B52F3632C183996004B7345 /* Kekke-Genkai */,
+				4B52F35A2C18369E004B7345 /* Villages */,
+				4B52F3512C182896004B7345 /* Clan */,
 				4B4C42C52C17342700758F48 /* HomeScreen */,
 				4B4C42BC2C1345A900758F48 /* SearchCharacter */,
 				4BD9AD322BDD925400C62C45 /* Navigation Stack */,
@@ -300,19 +385,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BD9AD3A2BDF093300C62C45 /* VideoPlayer.swift in Sources */,
+				4B52F36C2C183EEB004B7345 /* TailedBeastView.swift in Sources */,
 				4BD9AD312BDC39A300C62C45 /* CacheImage.swift in Sources */,
 				4B4C42BE2C1345C200758F48 /* SearchCharView.swift in Sources */,
 				4B4C42C72C17358900758F48 /* HomeScreenView.swift in Sources */,
+				4B52F3772C1840C9004B7345 /* TeamsViewModel.swift in Sources */,
 				4BD9AD1D2BD9779F00C62C45 /* AllCharacterViewModel.swift in Sources */,
 				4BC9F7DF2BD4060700DC94B6 /* ContentView.swift in Sources */,
 				4BD9AD362BDD935900C62C45 /* RootView.swift in Sources */,
+				4B52F3672C1839AE004B7345 /* KekkeModel.swift in Sources */,
 				4B4C42C22C13532600758F48 /* SearchCharViewModel.swift in Sources */,
 				4BD9AD382BDD948200C62C45 /* Router.swift in Sources */,
 				4B4C42C02C13506B00758F48 /* SearchCharModel.swift in Sources */,
+				4B52F3602C1836C6004B7345 /* VillageModel.swift in Sources */,
+				4B52F3592C1828D2004B7345 /* ClanViewModel.swift in Sources */,
+				4B52F3652C1839A4004B7345 /* KekkeView.swift in Sources */,
+				4B52F35C2C1836AB004B7345 /* VillageView.swift in Sources */,
 				4BC9F80E2BD45DED00DC94B6 /* EndPoints.swift in Sources */,
+				4B52F3572C1828C3004B7345 /* ClanModel.swift in Sources */,
 				4BC9F8102BD45E6500DC94B6 /* CharacterView.swift in Sources */,
+				4B52F36E2C183EF8004B7345 /* TailedBeastModel.swift in Sources */,
 				4BD9AD1F2BD977BD00C62C45 /* AllCharacterView.swift in Sources */,
+				4B52F3532C1828A4004B7345 /* ClanView.swift in Sources */,
 				4BD9AD242BD97BE000C62C45 /* Header.swift in Sources */,
+				4B52F3702C183F05004B7345 /* TailedBeastViewModel.swift in Sources */,
 				4BD9AD2D2BD9AAEB00C62C45 /* SIngleCharacterView.swift in Sources */,
 				4BD9AD212BD9793E00C62C45 /* Extensions.swift in Sources */,
 				4BC9F8142BD45EA700DC94B6 /* CharacterModel.swift in Sources */,
@@ -320,9 +416,13 @@
 				4BD9AD1B2BD9779000C62C45 /* AllCharacterModel.swift in Sources */,
 				4BD9AD2F2BD9B05300C62C45 /* NetworkManager.swift in Sources */,
 				4BD9AD342BDD92A300C62C45 /* NavigationPath.swift in Sources */,
+				4B52F3732C1840B3004B7345 /* TeamsView.swift in Sources */,
 				4BC9F7DD2BD4060700DC94B6 /* Naruto_UniverseApp.swift in Sources */,
 				4BC9F8122BD45E7800DC94B6 /* CharacterVIewModel.swift in Sources */,
 				4BD9AD292BD97D9D00C62C45 /* NjNarutoText.swift in Sources */,
+				4B52F3692C1839B7004B7345 /* KekkeViewModel.swift in Sources */,
+				4B52F3752C1840BE004B7345 /* TeamsModel.swift in Sources */,
+				4B52F3622C1836D1004B7345 /* VillageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

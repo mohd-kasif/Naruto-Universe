@@ -26,15 +26,15 @@ struct HomeScreenView: View {
         case .characters:
             Router.shared.pushNextScreen(view: AllCharacterView(), viewName: String(describing: AllCharacterView.self))
         case .clan:
-            return
+            Router.shared.pushNextScreen(view: ClanView(), viewName: String(describing: ClanView.self))
         case .village:
-            return
+            Router.shared.pushNextScreen(view: VillageView(), viewName: String(describing: VillageView.self))
         case .kekke:
-            return
+            Router.shared.pushNextScreen(view: KekkeView(), viewName: String(describing: KekkeView.self))
         case .tailed:
             return
         case .teams:
-            return
+            Router.shared.pushNextScreen(view: TeamsView(), viewName: String(describing: TeamsView.self))
         case .akatsuki:
             return
         case .kara:

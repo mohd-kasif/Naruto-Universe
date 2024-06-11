@@ -73,7 +73,7 @@ extension View{
                 })
                 
             })
-            .toolbarBackground(Color.color("#8a1e22"), for: .navigationBar)
+            .toolbarBackground(Color.color("#FFFFFF"), for: .navigationBar)
     }
 }
 
